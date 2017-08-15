@@ -1,0 +1,15 @@
+{
+  "name": "js-stack",
+  "version": "1.0.0",
+  "description": "creating a JS stack from scratch",
+  "main": "index.js",
+  "repository": "http://github.com/mjrouser/js-stack",
+  "author": "@mjrouser",
+  "license": "MIT",
+  "scripts": {
+    "start": "node ."
+  },
+  "dependencies": {
+    "color": "^2.0.0"
+  }
+}
