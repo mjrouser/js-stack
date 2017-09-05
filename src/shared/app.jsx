@@ -3,6 +3,7 @@
 import React from 'react'
 import { Switch } from 'react-router'
 import { Route } from 'react-router-dom'
+import Helmet from 'react-helmet'
 import { APP_NAME } from './config'
 import Nav from './component/nav'
 import HomePage from './component/page/home'
@@ -15,8 +16,15 @@ import {
   HELLO_ASYNC_PAGE_ROUTE,
 } from './routes'
 
+
 const App = () =>
   (<div>
+    <Helmet
+      meta={[
+        { name: 'description', content: 'Hello App is an app to say hello' },
+        { property: 'og:title', content: APP_NAME },
+      ]}
+    />
     <h1>{APP_NAME}</h1>
     <Nav />
     <Switch>
