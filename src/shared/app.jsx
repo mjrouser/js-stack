@@ -18,7 +18,7 @@ import {
 
 
 const App = () =>
-  (<div>
+  (<div style={{ paddingTop: 54 }}>
     <Helmet
       meta={[
         { name: 'description', content: 'Hello App is an app to say hello' },
